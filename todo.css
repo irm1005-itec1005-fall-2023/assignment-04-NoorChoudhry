@@ -1,0 +1,36 @@
+
+
+
+
+
+
+/*
+  PAGE / BODY
+*/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    color: var(--body-default-colour);
+    background-color: var(--body-background-colour);
+  }
+  
+  main {
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  /****** Screen reader text utility clsas *******/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
