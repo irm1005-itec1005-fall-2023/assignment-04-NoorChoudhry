@@ -8,20 +8,27 @@
  VARIABLES
 */
 :root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
+  /* Core colours - my palette: 
+  https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29 */
+  --colour-darkestbrown: #582F0E;
+  --colour-darkbrown: #7F4F24;
+  --colour-brown: #936639;
+  --colour-darkbeige: #A68A64;
+  --colour-beige: #B6AD90;
+  --colour-lightestgreen: #C2C5AA;
+  --colour-lightgreen: #A4AC86;
+  --colour-green: #656D4A;
+  --colour-darkgreen: #414833;
+  --colour-darkestgreen: #333D29;
+
+  --colour-backround: #fffbed;
 
   /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
+  --header-heading-colour: var(--colour-backround);
 
   /* Body configuration */
-  --body-default-colour: var(--colour-cello);
-  --body-background-colour: var(--colour-peppermint);
+  --default-colour: var(--colour-darkgreen);
+  --background-colour: var(--colour-backround);
 }
 
 /*
@@ -29,9 +36,25 @@
 */
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+  color: var(--default-colour);
+  background-color: var(--background-colour);
 }
+
+body a {
+  color: var(--colour-darkgreen);
+  text-align: center;
+  font-size: 2rem;
+}
+body a:hover {
+  color: var(--colour-darkbeige);
+  text-decoration: underline;
+}
+body a: {
+  color: var(--colour-darkbeige);
+  text-decoration: underline;
+}
+
+
 
 main {
   min-height: 100vh;
