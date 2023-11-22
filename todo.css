@@ -1,7 +1,12 @@
 
 /*  PAGE / BODY  */
 
-body {
+/*
+ * CSS File for the solution
+ * Assignment 03
+ */
+ 
+ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     color: var(--body-default-colour);
     background-color: var(--body-background-colour);
@@ -15,6 +20,35 @@ body {
     align-items: center;
   }
   
+
+
+
+/*
+ VARIABLES
+*/
+:root {
+    /* Core colours - my palette: 
+    https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29 */
+    --colour-darkestbrown: #582F0E;
+    --colour-darkbrown: #7F4F24;
+    --colour-brown: #936639;
+    --colour-darkbeige: #A68A64;
+    --colour-beige: #B6AD90;
+    --colour-lightestgreen: #C2C5AA;
+    --colour-lightgreen: #A4AC86;
+    --colour-green: #656D4A;
+    --colour-darkgreen: #414833;
+    --colour-darkestgreen: #333D29;
+  
+    --colour-backround: #fffbed;
+  
+    /* Header configuration */
+    --header-heading-colour: var(--colour-backround);
+  
+    /* Body configuration */
+    --default-colour: var(--colour-darkgreen);
+    --background-colour: var(--colour-backround);
+  }
   
   /****** Screen reader text utility clsas *******/
   .sr-only {

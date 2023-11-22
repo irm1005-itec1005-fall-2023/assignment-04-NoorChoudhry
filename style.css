@@ -1,37 +1,4 @@
 /*
- * CSS File for the solution
- * Assignment 03
- * You can modify these styles but you don't have to
- */
-
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours - my palette: 
-  https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29 */
-  --colour-darkestbrown: #582F0E;
-  --colour-darkbrown: #7F4F24;
-  --colour-brown: #936639;
-  --colour-darkbeige: #A68A64;
-  --colour-beige: #B6AD90;
-  --colour-lightestgreen: #C2C5AA;
-  --colour-lightgreen: #A4AC86;
-  --colour-green: #656D4A;
-  --colour-darkgreen: #414833;
-  --colour-darkestgreen: #333D29;
-
-  --colour-backround: #fffbed;
-
-  /* Header configuration */
-  --header-heading-colour: var(--colour-backround);
-
-  /* Body configuration */
-  --default-colour: var(--colour-darkgreen);
-  --background-colour: var(--colour-backround);
-}
-
-/*
   PAGE / BODY
 */
 body {
@@ -54,14 +21,59 @@ body a: {
   text-decoration: underline;
 }
 
-
-
 main {
   min-height: 100vh;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gotopage {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--colour-backround);
+  background-color: var(--colour-darkestbrown);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--colour-lightestgreen);
+}
+
+.gotopage:hover {background-color: var(--colour-darkbrown)}
+
+.gotopage:active {
+  background-color: var(--colour-darkbeige);
+  box-shadow: 0 5px var(--colour-lightgreen);
+  transform: translateY(4px);
+}
+
+/*COLOUR PALETTE*/
+
+:root {
+  /* Core colours - my palette: 
+  https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29 */
+  --colour-darkestbrown: #582F0E;
+  --colour-darkbrown: #7F4F24;
+  --colour-brown: #936639;
+  --colour-darkbeige: #A68A64;
+  --colour-beige: #B6AD90;
+  --colour-lightestgreen: #C2C5AA;
+  --colour-lightgreen: #A4AC86;
+  --colour-green: #656D4A;
+  --colour-darkgreen: #414833;
+  --colour-darkestgreen: #333D29;
+
+  --colour-backround: #fffbed;
+
+  /* Header configuration */
+  --header-heading-colour: var(--colour-backround);
+
+  /* Body configuration */
+  --default-colour: var(--colour-darkgreen);
+  --background-colour: var(--colour-backround);
 }
 
 
