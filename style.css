@@ -7,20 +7,6 @@ body {
   background-color: var(--background-colour);
 }
 
-body a {
-  color: var(--colour-darkgreen);
-  text-align: center;
-  font-size: 2rem;
-}
-body a:hover {
-  color: var(--colour-darkbeige);
-  text-decoration: underline;
-}
-body a: {
-  color: var(--colour-darkbeige);
-  text-decoration: underline;
-}
-
 main {
   min-height: 100vh;
 
@@ -45,7 +31,7 @@ main {
 .gotopage:hover {background-color: var(--colour-darkbrown)}
 
 .gotopage:active {
-  background-color: var(--colour-darkbeige);
+  background-color: var(--colour-darkbrown);
   box-shadow: 0 5px var(--colour-lightgreen);
   transform: translateY(4px);
 }
@@ -89,3 +75,20 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* dont need this anymore:
+
+body a {
+  color: var(--colour-darkgreen);
+  text-align: center;
+  font-size: 2rem;
+}
+body a:hover {
+  color: var(--colour-darkbeige);
+  text-decoration: underline;
+}
+body a: {
+  color: var(--colour-darkbeige);
+  text-decoration: underline;
+}
+*/

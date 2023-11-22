@@ -5,7 +5,7 @@
  * CSS File for the solution
  * Assignment 03
  */
- 
+
  body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     color: var(--body-default-colour);
@@ -62,3 +62,4 @@
     white-space: nowrap;
     border-width: 0;
   }
+

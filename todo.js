@@ -5,13 +5,17 @@
  */
 
 
+
+
+
+
+
+// ALREADY PUT IN STUFF
 //
 // Variables
 //
-
 // Constants
 const appID = "app";
-const headingText = "To do. To done. ✅";
 
 // DOM Elements
 let appContainer = document.getElementById(appID);
