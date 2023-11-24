@@ -1,16 +1,45 @@
-/* Assignment 04: Finishing a Todo List App
- *
- * 
- *
- */
+/* Assignment 04: Finishing a Todo List App */
+
+function addItem() {
+    var inputField = document.getElementById("todoInput");
+    var inputValue = inputField.value;
+
+    if (inputValue.trim() === "") {
+        alert("Please enter a task!");
+        return;
+    }
+
+    var todoList = document.getElementById("todoList");
+
+    // Create list item
+    var listItem = document.createElement("li");
+    listItem.className = "todoItem";
+
+    // Create span for task text
+    var taskSpan = document.createElement("span");
+    taskSpan.textContent = inputValue;
+
+    // Create span for delete button
+    var deleteSpan = document.createElement("span");
+    deleteSpan.textContent = "Delete";
+    deleteSpan.className = "delete";
+    deleteSpan.onclick = function () {
+        todoList.removeChild(listItem);
+    };
+
+    // Append task text and delete button to list item
+    listItem.appendChild(taskSpan);
+    listItem.appendChild(deleteSpan);
+
+    // Append list item to todo list
+    todoList.appendChild(listItem);
+
+    // Clear input field
+    inputField.value = "";
+}
 
 
-
-
-
-
-
-// ALREADY PUT IN STUFF
+/* ------ ALREADY PUT IN STUFF ------ */
 //
 // Variables
 //
