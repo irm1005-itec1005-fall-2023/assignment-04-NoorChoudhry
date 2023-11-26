@@ -9,17 +9,19 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     color: var(--default-colour);
     background-color: var(--background-colour);
+    margin: .5rem;
   }
+
   .title {
     min-height: 80px;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .thelist {
-    min-height: 10vh;
-  
+  .theform {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -31,15 +33,31 @@
     padding: 8px;
 }
 
-#addBtn, #deleteBtn {
+#addBtn {
     padding: 8px;
     margin: 5px;
     cursor: pointer;
+    background-color: var(--colour-lightgreen);
+}
+
+#deleteBtn {
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: var(--colour-darkestbrown);
+    color: var(--colour-lightestgreen);
+    justify-content: right;
 }
 
 #todoList {
     list-style-type: none;
-    padding: 0;
+    margin: 10px 0px;
+    padding: 20px 10px 20px 10px;
+    background-color: var(--colour-lightestgreen);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
 }
 
 .todoItem {
@@ -54,6 +72,7 @@
 .delete {
     color: var(--colour-darkbrown);
     cursor: pointer;
+    align-self: flex-end;
 }
 
 
