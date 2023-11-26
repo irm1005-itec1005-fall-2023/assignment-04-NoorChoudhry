@@ -24,13 +24,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--colour-lightestgreen);
+    border: var(--colour-darkestgreen) 1px solid;
+    margin: 1rem;
+    border-radius: 1rem;
   }
-
- 
 
 #todoInput {
     width: 70%;
     padding: 8px;
+    margin: 5px;
 }
 
 #addBtn {
@@ -44,17 +47,23 @@
     padding: 8px;
     margin: 5px;
     cursor: pointer;
+    align-self: flex-end;
     background-color: var(--colour-darkestbrown);
     color: var(--colour-lightestgreen);
-    justify-content: right;
+}
+
+.delete {
+    color: var(--colour-darkbrown);
+    cursor: pointer;
+    margin-left: 1rem;
 }
 
 #todoList {
     list-style-type: none;
     margin: 10px 0px;
-    padding: 20px 10px 20px 10px;
-    background-color: var(--colour-lightestgreen);
-    border-radius: 10px;
+    padding: 1rem;
+    background-color: var(--colour-beige);
+    border-radius: 0.5rem;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -62,19 +71,12 @@
 
 .todoItem {
     display: flex;
-    justify-content: center:
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid #A68A64;
-    padding: 8px;
-    margin: 5px 0;
+    border: 1px solid var(--colour-darkbrown);
+    padding: 0.2rem;
+    margin: 0.4rem 0;
 }
-
-.delete {
-    color: var(--colour-darkbrown);
-    cursor: pointer;
-    align-self: flex-end;
-}
-
 
 /*
  VARIABLES
