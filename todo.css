@@ -11,14 +11,16 @@
     background-color: var(--background-colour);
     margin: .5rem;
   }
-
+ 
+ /* the title at the top */ 
   .title {
-    min-height: 80px;
+    min-height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
+/* the outermost box and everthing in it*/
   .theform {
     display: flex;
     flex-direction: column;
@@ -26,24 +28,30 @@
     align-items: center;
     background-color: var(--colour-lightestgreen);
     border: var(--colour-darkestgreen) 1px solid;
-    margin: 1rem;
+    margin: 1rem 1 9rem 9;
     border-radius: 1rem;
-  }
-
-#todoInput {
-    width: 70%;
-    padding: 8px;
-    margin: 5px;
+    overflow auto;
+    max-width:100%;
 }
 
-#addBtn {
-    padding: 8px;
-    margin: 5px;
+/* the "enter a new task" type box  */
+  #todoInput {
+    width: 70%;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    background-color: var(--colour-backround);
+}
+
+/* the add button */
+  #addBtn {
+    padding: 0.4rem;
+    margin: 0.4rem;
     cursor: pointer;
     background-color: var(--colour-lightgreen);
 }
 
-#deleteBtn {
+/* the delete button */
+  #deleteBtn {
     padding: 8px;
     margin: 5px;
     cursor: pointer;
@@ -52,15 +60,16 @@
     color: var(--colour-lightestgreen);
 }
 
-.delete {
+  .delete {
     color: var(--colour-darkbrown);
     cursor: pointer;
     margin-left: 1rem;
 }
 
-#todoList {
+/* the whole list itself */
+  #todoList {
     list-style-type: none;
-    margin: 10px 0px;
+    margin: 1rem;
     padding: 1rem;
     background-color: var(--colour-beige);
     border-radius: 0.5rem;
@@ -69,7 +78,8 @@
     text-align: center;
 }
 
-.todoItem {
+/* individual items */
+  .todoItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
