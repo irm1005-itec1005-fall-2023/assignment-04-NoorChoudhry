@@ -28,14 +28,22 @@ main {
   box-shadow: 0 9px var(--colour-lightestgreen);
 }
 
-.gotopage:hover {background-color: var(--colour-darkbrown)}
+.gotopage:hover {background-color: var(--colour-darkbrown)
+}
 
 .gotopage:active {
   background-color: var(--colour-darkbrown);
   box-shadow: 0 5px var(--colour-lightgreen);
   transform: translateY(4px);
+  color: var(--background-colour);
 }
 
+a {
+  color: var(--colour-backround);
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
 /*COLOUR PALETTE*/
 
 :root {
