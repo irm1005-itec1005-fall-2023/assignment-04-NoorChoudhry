@@ -39,7 +39,7 @@ function addItem() {
   // attach above to the list item to todo list
   todoList.appendChild(listItem);
 
-  // boom clear input field
+  // boom clear input field 
   inputField.value = "";
 }
 
