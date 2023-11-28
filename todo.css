@@ -68,7 +68,6 @@
 
 /* the whole list itself */
   #todoList {
-    list-style-type: none;
     margin: 1rem;
     padding: 1rem;
     background-color: var(--colour-beige);
