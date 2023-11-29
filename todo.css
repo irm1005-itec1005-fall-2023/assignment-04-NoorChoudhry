@@ -9,15 +9,17 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
     color: var(--default-colour);
     background-color: var(--background-colour);
+/* background-image: url("images/backroundimg.jpg"); */
     margin: .5rem;
   }
- 
+
  /* the title at the top */ 
   .title {
     min-height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-shadow: var(--background-colour) 1px 0 10px;
   }
 
 /* the outermost box and everthing in it*/
@@ -29,8 +31,7 @@
     background-color: var(--colour-lightestgreen);
     border: var(--colour-darkestgreen) 1px solid;
     margin: auto;
-    border-radius: 1rem;
-    overflow: auto;
+    border-radius: 1rem;;
     max-width: 80%;
 }
 
@@ -86,6 +87,7 @@
     border: 1px solid var(--colour-darkbrown);
     padding: 0.2rem;
     margin: 0.4rem 0;
+    overflow-wrap: auto;
 }
 
 /*
