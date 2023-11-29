@@ -35,6 +35,11 @@
     max-width: 80%;
 }
 
+.thelist {
+    max-width: 90%;
+    height: auto;
+}
+
 /* the "enter a new task" type box  */
   #todoInput {
     width: 70%;
@@ -77,6 +82,7 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
+    word-wrap: break-word;
 }
 
 /* individual items */
@@ -87,8 +93,12 @@
     border: 1px solid var(--colour-darkbrown);
     padding: 0.2rem;
     margin: 0.4rem 0;
-    overflow-wrap: auto;
 }
+
+.todoItem.completed {
+    text-decoration: line-through;
+    color: #888;
+  }
 
 /*
  VARIABLES

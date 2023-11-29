@@ -32,7 +32,16 @@ function addItem() {
     todoList.removeChild(listItem);
   };
 
+  // Creating button for completed
+  const completeButton = document.createElement("button");
+  completeButton.textContent = "Complete";
+  completeButton.className = "complete";
+  completeButton.onclick = function () {
+    listItem.classList.toggle("completed");
+  };
+
   // attach text and delete button together to list item
+  listItem.appendChild(completeButton);
   listItem.appendChild(taskParagraph);
   listItem.appendChild(deleteButton);
 
