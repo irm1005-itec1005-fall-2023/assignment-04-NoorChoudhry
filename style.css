@@ -1,36 +1,10 @@
 /*
- * CSS File for the solution
- * Assignment 03
- * You can modify these styles but you don't have to
- */
-
-/*
- VARIABLES
-*/
-:root {
-  /* Core colours */
-  /* https://coolors.co/palette/e63946-f1faee-a8dadc-457b9d-1d3557 */
-  --colour-amaranth: #e63946;
-  --colour-peppermint: #f1faee;
-  --colour-aquaisland: #a8dadc;
-  --colour-wedgewood: #457b9d;
-  --colour-cello: #1d3557;
-
-  /* Header configuration */
-  --header-heading-colour: var(--colour-peppermint);
-
-  /* Body configuration */
-  --body-default-colour: var(--colour-cello);
-  --body-background-colour: var(--colour-peppermint);
-}
-
-/*
   PAGE / BODY
 */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--body-default-colour);
-  background-color: var(--body-background-colour);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+  color: var(--default-colour);
+  background-color: var(--background-colour);
 }
 
 main {
@@ -39,6 +13,61 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.gotopage {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: var(--colour-backround);
+  background-color: var(--colour-darkestbrown);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px var(--colour-lightestgreen);
+}
+
+.gotopage:hover {background-color: var(--colour-darkbrown)
+}
+
+.gotopage:active {
+  background-color: var(--colour-darkbrown);
+  box-shadow: 0 5px var(--colour-lightgreen);
+  transform: translateY(4px);
+  color: var(--background-colour);
+}
+
+a {
+  color: var(--colour-backround);
+  text-align: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+/*COLOUR PALETTE*/
+
+:root {
+  /* Core colours - my palette: 
+  https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29 */
+  --colour-darkestbrown: #582F0E;
+  --colour-darkbrown: #7F4F24;
+  --colour-brown: #936639;
+  --colour-darkbeige: #A68A64;
+  --colour-beige: #B6AD90;
+  --colour-lightestgreen: #C2C5AA;
+  --colour-lightgreen: #A4AC86;
+  --colour-green: #656D4A;
+  --colour-darkgreen: #414833;
+  --colour-darkestgreen: #333D29;
+
+  --colour-backround: #fffbed;
+
+  /* Header configuration */
+  --header-heading-colour: var(--colour-backround);
+
+  /* Body configuration */
+  --default-colour: var(--colour-darkgreen);
+  --background-colour: var(--colour-backround);
 }
 
 
@@ -54,3 +83,20 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+/* dont need this anymore:
+
+body a {
+  color: var(--colour-darkgreen);
+  text-align: center;
+  font-size: 2rem;
+}
+body a:hover {
+  color: var(--colour-darkbeige);
+  text-decoration: underline;
+}
+body a: {
+  color: var(--colour-darkbeige);
+  text-decoration: underline;
+}
+*/

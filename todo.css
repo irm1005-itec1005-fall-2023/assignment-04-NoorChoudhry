@@ -1,0 +1,153 @@
+
+/*  PAGE / BODY  */
+
+/*
+ * CSS File for the solution
+ * Assignment 03
+ */
+ body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    color: var(--default-colour);
+    background-color: var(--background-colour);
+/* background-image: url("images/backroundimg.jpg"); */
+    margin: .5rem;
+  }
+
+ /* the title at the top */ 
+  .title {
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--background-colour) 1px 0 10px;
+  }
+
+/* the outermost box and everthing in it*/
+  .theform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colour-lightestgreen);
+    border: var(--colour-darkestgreen) 1px solid;
+    margin: auto;
+    border-radius: 1vh;;
+    max-width: 80vh;
+
+}
+
+/* everthing in the outermost box */
+  .thelist {
+    max-width: 70vh;
+    height: auto;
+    position: relative;
+    word-break: break-all;
+}
+
+/* the "enter a new task" type box  */
+  #todoInput {
+    width: 70%;
+    padding: 0.4rem;
+    margin: 0.4rem;
+    align-self: center;
+    background-color: var(--colour-backround);
+}
+
+/* the add button */
+  #addBtn {
+    padding: 0.4rem;
+    margin: auto;
+    cursor: pointer;
+    background-color: var(--colour-lightgreen);
+}
+
+/* the whole list itself */
+#todoList {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--colour-beige);
+    border-radius: 1vh;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* individual items */
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--colour-darkbrown);
+    padding: 0.2rem;
+    margin: 0.4rem 0;
+}
+
+/* the delete button */
+  #deleteBtn {
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    background-color: var(--colour-darkestbrown);
+    color: var(--colour-lightestgreen);
+}
+
+  .delete {
+    background-color: var(--colour-brown);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+/* the complete button */
+.complete {
+    background-color: var(--colour-green);
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.todoItem.completed {
+    text-decoration: line-through;
+    color: var(--colour-darkestbrown);
+}
+
+/*
+ VARIABLES
+*/
+:root {
+    /* Core colours - my palette: 
+    https://coolors.co/palette/582f0e-7f4f24-936639-a68a64-b6ad90-c2c5aa-a4ac86-656d4a-414833-333d29 */
+    --colour-darkestbrown: #582F0E;
+    --colour-darkbrown: #7F4F24;
+    --colour-brown: #936639;
+    --colour-darkbeige: #A68A64;
+    --colour-beige: #B6AD90;
+    --colour-lightestgreen: #C2C5AA;
+    --colour-lightgreen: #A4AC86;
+    --colour-green: #656D4A;
+    --colour-darkgreen: #414833;
+    --colour-darkestgreen: #333D29;
+  
+    --colour-backround: #fffbed;
+  
+    /* Header configuration */
+    --header-heading-colour: var(--colour-backround);
+  
+    /* Body configuration */
+    --default-colour: var(--colour-darkgreen);
+    --background-colour: var(--colour-backround);
+  }
+  
+  /****** Screen reader text utility clsas *******/
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
