@@ -26,7 +26,7 @@ function addItem() {
 
   // Creating button for delete 
   const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Delete";
+  deleteButton.textContent = "❎";
   deleteButton.className = "delete";
   deleteButton.onclick = function () {
     todoList.removeChild(listItem);
@@ -34,7 +34,7 @@ function addItem() {
 
   // Creating button for completed
   const completeButton = document.createElement("button");
-  completeButton.textContent = "Complete";
+  completeButton.textContent = "✅";
   completeButton.className = "complete";
   completeButton.onclick = function () {
     listItem.classList.toggle("completed");

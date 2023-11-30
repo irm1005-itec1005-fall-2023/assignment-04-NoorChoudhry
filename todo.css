@@ -31,13 +31,17 @@
     background-color: var(--colour-lightestgreen);
     border: var(--colour-darkestgreen) 1px solid;
     margin: auto;
-    border-radius: 1rem;;
-    max-width: 80%;
+    border-radius: 1vh;;
+    max-width: 80vh;
+
 }
 
-.thelist {
-    max-width: 90%;
+/* everthing in the outermost box */
+  .thelist {
+    max-width: 70vh;
     height: auto;
+    position: relative;
+    word-break: break-all;
 }
 
 /* the "enter a new task" type box  */
@@ -57,6 +61,26 @@
     background-color: var(--colour-lightgreen);
 }
 
+/* the whole list itself */
+#todoList {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--colour-beige);
+    border-radius: 1vh;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* individual items */
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--colour-darkbrown);
+    padding: 0.2rem;
+    margin: 0.4rem 0;
+}
+
 /* the delete button */
   #deleteBtn {
     padding: 8px;
@@ -68,37 +92,24 @@
 }
 
   .delete {
-    color: var(--colour-darkbrown);
+    background-color: var(--colour-brown);
+    font-weight: bold;
     cursor: pointer;
     margin-left: 1rem;
 }
 
-/* the whole list itself */
-  #todoList {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: var(--colour-beige);
-    border-radius: 0.5rem;
-    font-size: 1rem;
+/* the complete button */
+.complete {
+    background-color: var(--colour-green);
     font-weight: bold;
-    text-align: center;
-    word-wrap: break-word;
-}
-
-/* individual items */
-  .todoItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid var(--colour-darkbrown);
-    padding: 0.2rem;
-    margin: 0.4rem 0;
+    cursor: pointer;
+    margin-right: 1rem;
 }
 
 .todoItem.completed {
     text-decoration: line-through;
-    color: #888;
-  }
+    color: var(--colour-darkestbrown);
+}
 
 /*
  VARIABLES
